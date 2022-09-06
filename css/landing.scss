@@ -1,0 +1,548 @@
+@font-face {
+  font-family: 'Macedonia';
+  src: url('../fonts/Macedonia.ttf');
+  src: local('Macedonia'), url('../fonts/Macedonia.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@import './components';
+
+.landing_mainWrapper {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing_promo {
+  background-image: url(../img/sky.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 475px;
+
+  .landing_promo_front {
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+  }
+
+  .landing_promo_back1 {
+    position: absolute;
+    z-index: 8;
+    bottom: -80px;
+    right: 0;
+  }
+  .landing_promo_back2 {
+    position: absolute;
+    z-index: 7;
+    bottom: 107px;
+    right: 0;
+  }
+
+  .landing_promo_cloud3 {
+    position: absolute;
+    z-index: 6;
+    bottom: 500px;
+    right: 0;
+  }
+
+  .landing_promo_cloud {
+    position: absolute;
+    z-index: 5;
+    bottom: 317px;
+    left: 400px;
+  }
+
+  .navbar {
+    background: none;
+    .navbar-nav {
+      width: 100%;
+    }
+    .nav-item {
+      margin-left: 10px;
+    }
+    .nav-link {
+      font-family: 'Macedonia', sans-serif;
+      font-size: 30px;
+      color: #f7e6bc;
+    }
+
+    .landing_contractAddr {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #fcb946;
+      margin-left: auto;
+    }
+
+    .landing_btnLight {
+      margin-left: auto;
+      width: 144px;
+      height: 40px;
+    }
+  }
+
+  .landing_promo_main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+    .landing_promo_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 33px;
+      margin-bottom: 50px;
+      width: 100%;
+
+      .landing_promo_list_item {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Macedonia', sans-serif;
+        align-items: center;
+        text-align: center;
+
+        .fistSm {
+          margin-bottom: 15px;
+          width: 20px;
+          height: 29px;
+        }
+      }
+    }
+    .landing_promo_socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .landing_promo_socialsItem {
+        width: 20%;
+      }
+    }
+    .landing_promo_nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 52px;
+
+      .landing_btnDark1,
+      .landing_btnDark2 {
+        width: 48%;
+        border-radius: 9px;
+      }
+    }
+  }
+}
+
+.landing_features {
+  padding-top: 150px;
+  background-image: url(../img/background.png);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  position: relative;
+  .landing_features_cloud {
+    position: absolute;
+    top: -150px;
+    right: 0;
+    z-index: 11;
+    width: 100%;
+    .cloudBar {
+      width: 100%;
+    }
+  }
+
+  .landing_features_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .landing_features_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .landing_features_icon {
+        margin-bottom: 20px;
+      }
+
+      .landing_textLg {
+        margin-bottom: 15px;
+        font-family: 'Macedonia', sans-serif;
+      }
+    }
+  }
+}
+
+.landing_roadmap {
+  padding-top: 150px;
+  background-image: url(../img/background.png);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  position: relative;
+  margin-top: -1px;
+  padding-bottom: 80px;
+  .landing_rmLastChild {
+    &::after {
+      display: none !important;
+    }
+  }
+
+  .landing_roadmap_main {
+    #roadmap_tabContent1, #roadmap_tabContent2 {
+      display: none;
+    }
+    .landing_roadmap_tabs {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .landing_tabsItem {
+        font-family: 'Macedonia', sans-serif;
+        font-size: 32px;
+        color: #5a130a;
+        border: none;
+        background: none;
+        width: 114px;
+        height: 60px;
+        position: relative;
+        &:not(:last-child) {
+          &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 34px;
+            right: -40px;
+            top: 30px;
+            border-top: 2px dashed #986758;
+          }
+        }
+      }
+      .landing_tabsItem .landing_tabActive {
+        background-image: url(../img/tabActive.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+    }
+    .landing_roadmap_tabContent {
+      .stageReverse {
+        margin-right: auto;
+        margin-top: -100px;
+        .landing_roadmap_stageImg {
+          position: relative;
+          margin-left: 0 !important;
+        }
+        .landing_roadmap_stageText {
+          font-family: 'Macedonia', sans-serif;
+          margin-left: 0 !important;
+          margin-right: 8%;
+          text-align: right;
+        }
+      }
+      .landing_roadmap_stage {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-left: auto;
+        &:not(:first-child) {
+          margin-top: -88px;
+        }
+        .landing_roadmap_stageMarker {
+          position: relative;
+          z-index: 10;
+
+          .landing_stageMarkerBefore {
+            position: absolute;
+            left: -185px;
+            top: -60px;
+            height: 185px;
+            width: 177px;
+            z-index: -1;
+            .landing_markerBefore {
+              height: 100%;
+            }
+          }
+        }
+
+        #stage1Marker {
+          &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/rmRouteDown.png);
+            background-repeat: no-repeat;
+            height: 202px;
+            width: 663px;
+            left: 25px;
+            top: 40px;
+          }
+        }
+        #stageReverseMarker {
+          .landing_stageMarkerBefore {
+            position: absolute;
+            left: 80px;
+            top: -60px;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/rmRouteReverse.png);
+            background-repeat: no-repeat;
+            height: 202px;
+            width: 663px;
+            right: 15px;
+            top: 40px;
+          }
+        }
+
+        .landing_roadmap_stageText {
+          font-family: 'Macedonia', sans-serif;
+          margin-left: 8%;
+          width: 360px;
+          line-height: 1;
+        }
+        .landing_roadmap_stageImg {
+          margin-left: auto;
+          position: relative;
+          z-index: 5;
+          .landing_stageImgAfter {
+            position: absolute;
+            height: 253px;
+            width: 520px;
+            left: 25px;
+            bottom: 10px;
+            z-index: -1;
+          }
+        }
+
+        #stageReverseImg {
+          z-index: 5;
+          .landing_stageImgAfter {
+            left: -129px;
+            bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.landing_tokenomics {
+  background-image: url(../img/background.png);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  margin-top: -4px;
+  .landing_tokenomics_main {
+    display: flex;
+    justify-content: space-between;
+    .landing_tokenomics_bar {
+      width: 49%;
+      font-family: 'Macedonia', sans-serif;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: url(../img/barr.png);
+      background-size: 100% 100%;
+      background-position: center top;
+      background-repeat: no-repeat;
+      height: 500px;
+      max-width: 500px;
+    }
+    .landing_tokenomics_legend {
+      width: 49%;
+      display: flex;
+      flex-wrap: wrap;
+      .landing_tokenomics_legendItem {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          border-radius: 100%;
+          border: 4px solid #521908;
+          left: -34px;
+          top: 8px;
+        }
+        .landing_textLg {
+          font-family: 'Macedonia', sans-serif;
+        }
+        .landing_textSm {
+          font-weight: 500;
+        }
+      }
+      .landing_itemBrown {
+        &::before {
+          background: #cd5328;
+        }
+      }
+      .landing_itemBlue {
+        &::before {
+          background: #88a6c4;
+        }
+      }
+      .landing_itemGolden {
+        &::before {
+          background: #ffab0a;
+        }
+      }
+      .landing_itemGray {
+        &::before {
+          background: #6b7a99;
+        }
+      }
+      .landing_itemYellow {
+        &::before {
+          background: #ffde8a;
+        }
+      }
+      .landing_itemOtange {
+        &::before {
+          background: #e35c05;
+        }
+      }
+      .landing_itemSky {
+        &::before {
+          background: #74d5fd;
+        }
+      }
+      .landing_itemBrown {
+        &::before {
+          background: #bc6927;
+        }
+      }
+      .landing_itemBezh {
+        &::before {
+          background: #fff8eb;
+        }
+      }
+      .landing_itemGround {
+        &::before {
+          background: #856348;
+        }
+      }
+      .landing_itemSilver {
+        &::before {
+          background: #d9ebfc;
+        }
+      }
+      .landing_itemDarkBrown {
+        &::before {
+          background: #99420d;
+        }
+      }
+      .landing_itemLighterBrown {
+        &::before {
+          background: #bd520f;
+        }
+      }
+    }
+  }
+  .landing_tokenomics_table {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Macedonia', sans-serif;
+
+    .landing_tokenomics_table_side {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      &:nth-child(2) {
+        border-left: 1px dashed #d1a172;
+        border-right: 1px dashed #d1a172;
+      }
+      .landing_tokenomics_table_side_heading {
+        font-family: 'Macedonia', sans-serif;
+      }
+      .landing_tokenomics_table_sideLine {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        &:not(:last-child) {
+          border-bottom: 1px dashed #d1a172;
+        }
+        .landing_tokenomics_table_sideLine_item {
+          text-align: center;
+          width: 100px;
+        }
+      }
+    }
+    .landing_comission {
+      .landing_tokenomics_table_sideLine {
+        height: auto !important;
+      }
+      .landing_tokenomics_table_sideLine_item {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+.landing_team {
+  background-image: url(../img/background.png);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  margin-top: -4px;
+  .landing_team_main {
+    display: flex;
+    justify-content: space-between;
+    .landing_team_item {
+      width: 19%;
+      .landing_team_itemImg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.landing_footer {
+  background-image: url(../img/background.png);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  margin-top: -4px;
+  padding-top: 111px;
+  .landing_footer_banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .landing_footer_sosials {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .landing_footer_sosialsItem {
+      background-image: url(../img/footerBtn.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      width: 44px;
+      height: 44px;
+      border: none;
+    }
+  }
+  .landing_footer_bottom {
+    width: 100%;
+    height: 313px;
+    background-image: url(../img/footer_bottom.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}

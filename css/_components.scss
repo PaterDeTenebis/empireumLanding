@@ -1,0 +1,103 @@
+.landing_textDark {
+  color: #5a130a;
+}
+
+.landing_textLight {
+  color: #f7e6bc;
+}
+
+.landing_ttu {
+  text-transform: uppercase;
+}
+.landing_textXs {
+  font-size: 12px;
+}
+.landing_textSm {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing_textMd {
+  font-size: 23px;
+}
+.landing_textLg {
+  font-size: 30px;
+}
+
+.landing_textXl {
+  font-size: 70px;
+}
+
+.landing_btnLight {
+  background-image: url(../img/Subtract_light.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #f7e6bc;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing_btnDark1 {
+  background-image: url(../img/Subtract_dark.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: rgba(247, 230, 188, 0.6);
+  color: #5a130a;
+  font-size: 25px;
+  height: 65px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing_btnDark2 {
+  background-image: url(../img/Subtract_dark.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: rgba(255, 195, 42, 0.6);
+  color: #5a130a;
+  font-size: 25px;
+  height: 65px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing_promo_list_divider {
+  width: 14px;
+  height: 70px;
+  background-image: url(../img/promoDivider.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.landing_pageHeader {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 70px;
+  .landing_textXl {
+    font-family: 'Macedonia', sans-serif;
+  }
+}
+
+.landing_sectionDivider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  padding-bottom: 30px;
+  .landing_sectionDivider_left,
+  .landing_sectionDivider_right {
+    background-image: url(../img/sectionDivider_subtract.png);
+    height: 40px;
+    width: 39%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
