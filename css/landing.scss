@@ -198,7 +198,7 @@
   }
 
   .landing_roadmap_main {
-    #roadmap_tabContent1, #roadmap_tabContent2 {
+    #roadmap_tabContent1, #roadmap_tabContent2, #roadmap_tabContent3, #roadmap_tabContent4, #roadmap_tabContent5 {
       display: none;
     }
     .landing_roadmap_tabs {
@@ -233,7 +233,15 @@
         background-position: center top;
       }
     }
+    .landing_roadmap_tabContentWrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1155px;
+    }
     .landing_roadmap_tabContent {
+      position: absolute;
       .stageReverse {
         margin-right: auto;
         margin-top: -100px;
