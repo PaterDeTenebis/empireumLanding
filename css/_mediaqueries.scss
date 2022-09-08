@@ -35,7 +35,7 @@
     justify-content: center;
   }
   .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_bar {
-    width: 100%;
+    width: 500px;
   }
   .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_legend {
     width: 100%;
@@ -64,12 +64,16 @@
   .landing_promo .landing_promo_back1 {
     bottom: -146px;
   }
+  #landing_rmWrapper6 {
+    height: 935px;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
     transform: scale(0.5);
     width: 185%;
+    
   }
   .landing_roadmap {
     padding-top: 50px;
@@ -86,5 +90,44 @@
   }
   .landing_tokenomics .landing_tokenomics_table .landing_tokenomics_table_side {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .landing_features .landing_features_cloud {
+    top: -34px;
+  }
+  .landing_promo .landing_promo_main .landing_promo_nav {
+    flex-wrap: wrap;
+  }
+  .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark1, .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .landing_promo .landing_promo_main .landing_promo_list {
+    flex-direction: column;
+  }
+  .landing_promo_list_divider {
+    display: none;
+  }
+  .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_legend .landing_tokenomics_legendItem {
+    width: 100%;
+    margin-left: 50px;
+  }
+  .landing_footer_bannerImg {
+    width: 100%;
+  }
+  .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_bar {
+    width: 300px;
+    height: 300px; 
+    font-size: 40px;
+  }
+  .landing_promo .landing_promo_main .landing_promo_list .landing_promo_list_item {
+    flex-direction: row;
+    width: 100%;
+  }
+  .landing_promo .landing_promo_main .landing_promo_list .landing_promo_list_item .fistSm {
+    margin-right: 20px;
+    margin-bottom: 0;
   }
 }

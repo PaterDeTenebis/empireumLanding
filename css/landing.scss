@@ -201,10 +201,14 @@
     #roadmap_tabContent1, #roadmap_tabContent2, #roadmap_tabContent3, #roadmap_tabContent4, #roadmap_tabContent5 {
       display: none;
     }
+    .landing_tabsWrapper {
+      overflow-x: scroll;
+    }
     .landing_roadmap_tabs {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      min-width: 936px;
       .landing_tabsItem {
         font-family: 'Macedonia', sans-serif;
         font-size: 32px;
@@ -240,11 +244,10 @@
       align-items: flex-end;
       height: 1155px;
     }
-    #landing_rmWrapper6 {
-      height: 935px;
-    }
+    
     .landing_roadmap_tabContent {
       position: absolute;
+      width: 100%;
       .stageReverse {
         margin-right: auto;
         margin-top: -100px;
