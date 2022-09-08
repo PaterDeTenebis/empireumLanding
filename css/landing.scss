@@ -289,7 +289,7 @@
             background-repeat: no-repeat;
             height: 202px;
             width: 663px;
-            left: 25px;
+            left: 2px;
             top: 40px;
           }
         }
@@ -306,8 +306,8 @@
             background-repeat: no-repeat;
             height: 202px;
             width: 663px;
-            right: 15px;
-            top: 40px;
+            right: 1px;
+            top: 42px;
           }
         }
 
@@ -554,3 +554,5 @@
     background-position: center top;
   }
 }
+
+@import './mediaqueries';

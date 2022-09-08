@@ -1,0 +1,43 @@
+@media screen and (max-width: 991px) {
+    .landing_promo .landing_promo_main {
+        width: 100%;
+    }
+    .landing_textLogo {
+        .textLogo_img {
+            width: 100%;
+        }
+    }
+    .landing_promo .landing_promo_main .landing_promo_list .landing_promo_list_item {
+        .landing_textDark {
+            text-shadow: 0px 0px 2px #912214;
+        }
+    }
+
+    .landing_promo .landing_promo_main .landing_promo_socials .landing_promo_socialsItem {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing_features .landing_features_main {
+        flex-wrap: wrap;
+    }
+
+    .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
+       transform: scale(0.7);
+       width: 140%; 
+       margin-top: -280px;
+    }
+    .landing_tokenomics .landing_tokenomics_main {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_bar {
+        width: 100%;
+    }
+    .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_legend {
+        width: 100%;
+    }
+}
