@@ -116,7 +116,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px;
   padding-bottom: 30px;
 }
 
@@ -427,10 +426,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   height: 1155px;
+}
+
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper6 {
+  height: 935px;
 }
 
 .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
@@ -837,10 +840,10 @@
         flex-wrap: wrap;
   }
   .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
     width: 140%;
-    margin-top: -280px;
+    bottom: 0;
   }
   .landing_tokenomics .landing_tokenomics_main {
     -ms-flex-wrap: wrap;
@@ -856,6 +859,56 @@
     width: 100%;
   }
   .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_legend {
+    width: 100%;
+  }
+  .landing_tokenomics
+.landing_tokenomics_main
+.landing_tokenomics_legend
+.landing_tokenomics_legendItem {
+    width: 33%;
+  }
+  .landing_tokenomics .landing_tokenomics_table {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .landing_tokenomics .landing_tokenomics_table .landing_tokenomics_table_side {
+    width: 49%;
+  }
+  .landing_promo .navbar .landing_contractAddr,
+  .landing_promo .navbar .landing_btnLight {
+    margin-left: 0px;
+  }
+  .landing_features .landing_features_cloud {
+    top: -72px;
+  }
+  .landing_promo .landing_promo_back2,
+  .landing_promo .landing_promo_front,
+  .landing_promo .landing_promo_back1 {
+    bottom: -146px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    width: 185%;
+  }
+  .landing_roadmap {
+    padding-top: 50px;
+    overflow: hidden;
+  }
+  .landing_team .landing_team_main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .landing_team .landing_team_main .landing_team_item {
+    width: 33%;
+  }
+  .landing_footer .landing_footer_bottom {
+    height: 176px;
+  }
+  .landing_tokenomics .landing_tokenomics_table .landing_tokenomics_table_side {
     width: 100%;
   }
 }

@@ -237,8 +237,11 @@
       position: relative;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       height: 1155px;
+    }
+    #landing_rmWrapper6 {
+      height: 935px;
     }
     .landing_roadmap_tabContent {
       position: absolute;
