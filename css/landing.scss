@@ -150,7 +150,7 @@
   position: relative;
   .landing_features_cloud {
     position: absolute;
-    top: -150px;
+    top: -114px;
     right: 0;
     z-index: 11;
     width: 100%;
@@ -191,6 +191,7 @@
   position: relative;
   margin-top: -1px;
   padding-bottom: 80px;
+  overflow: hidden;
   .landing_rmLastChild {
     &::after {
       display: none !important;
@@ -198,11 +199,33 @@
   }
 
   .landing_roadmap_main {
-    #roadmap_tabContent1, #roadmap_tabContent2, #roadmap_tabContent3, #roadmap_tabContent4, #roadmap_tabContent5 {
+    #landing_rmWrapper2,
+    #landing_rmWrapper6,
+    #landing_rmWrapper3,
+    #landing_rmWrapper4,
+    #landing_rmWrapper5 {
       display: none;
+    }
+    #landing_rmWrapper5 {
+      height: 1100px;
+    }
+    #landing_rmWrapper4,
+    #landing_rmWrapper1 {
+      height: 1700px;
+    }
+    #landing_rmWrapper3 {
+      height: 1514px;
+    }
+    #landing_rmWrapper2 {
+      height: 2200px;
     }
     .landing_tabsWrapper {
       overflow-x: scroll;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
     .landing_roadmap_tabs {
       display: flex;
@@ -244,10 +267,11 @@
       align-items: flex-end;
       height: 1155px;
     }
-    
+
     .landing_roadmap_tabContent {
       position: absolute;
       width: 100%;
+      top: 0;
       .stageReverse {
         margin-right: auto;
         margin-top: -100px;

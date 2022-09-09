@@ -1,3 +1,8 @@
+@media screen and (max-width: 1490px) {
+  .landing_features .landing_features_cloud {
+    top: -100px;
+  }
+}
 @media screen and (max-width: 991px) {
   .landing_promo .landing_promo_main {
     width: 100%;
@@ -25,8 +30,7 @@
   }
 
   .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
-    transform: scale(0.6);
-    width: 140%;
+    zoom: 0.7;
     bottom: 0;
   }
   .landing_tokenomics .landing_tokenomics_main {
@@ -64,21 +68,39 @@
   .landing_promo .landing_promo_back1 {
     bottom: -146px;
   }
-  #landing_rmWrapper6 {
-    height: 935px;
+  #landing_rmWrapper6,
+  #landing_rmWrapper5 {
+    height: 800px !important;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
-    transform: scale(0.5);
-    width: 185%;
-    
+  #landing_rmWrapper4,
+  #landing_rmWrapper1 {
+    height: 1200px !important;
+  }
+  #landing_rmWrapper2 {
+    height: 1550px !important;
   }
   .landing_roadmap {
     padding-top: 50px;
     overflow: hidden;
   }
+  .landing_footer .landing_footer_sosials {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
+    zoom: 0.5;
+  }
+  #landing_rmWrapper6,
+  #landing_rmWrapper5 {
+    height: 600px !important;
+  }
+
+  #landing_rmWrapper2 {
+    height: 1100px !important;
+  }
+
   .landing_team .landing_team_main {
     flex-wrap: wrap;
   }
@@ -91,6 +113,10 @@
   .landing_tokenomics .landing_tokenomics_table .landing_tokenomics_table_side {
     width: 100%;
   }
+  #landing_rmWrapper4,
+  #landing_rmWrapper1 {
+    height: 830px !important;
+  }
 }
 
 @media screen and (max-width: 533px) {
@@ -100,7 +126,8 @@
   .landing_promo .landing_promo_main .landing_promo_nav {
     flex-wrap: wrap;
   }
-  .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark1, .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark2 {
+  .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark1,
+  .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark2 {
     width: 100%;
     margin-top: 10px;
   }
@@ -110,7 +137,10 @@
   .landing_promo_list_divider {
     display: none;
   }
-  .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_legend .landing_tokenomics_legendItem {
+  .landing_tokenomics
+    .landing_tokenomics_main
+    .landing_tokenomics_legend
+    .landing_tokenomics_legendItem {
     width: 100%;
     margin-left: 50px;
   }
@@ -119,7 +149,7 @@
   }
   .landing_tokenomics .landing_tokenomics_main .landing_tokenomics_bar {
     width: 300px;
-    height: 300px; 
+    height: 300px;
     font-size: 40px;
   }
   .landing_promo .landing_promo_main .landing_promo_list .landing_promo_list_item {
@@ -129,5 +159,25 @@
   .landing_promo .landing_promo_main .landing_promo_list .landing_promo_list_item .fistSm {
     margin-right: 20px;
     margin-bottom: 0;
+  }
+  .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
+    zoom: 0.4;
+  }
+  #landing_rmWrapper6,
+  #landing_rmWrapper5 {
+    height: 470px !important;
+  }
+  #landing_rmWrapper4,
+  #landing_rmWrapper1 {
+    height: 700px !important;
+  }
+  #landing_rmWrapper2 {
+    height: 900px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .landing_features .landing_features_main {
+    justify-content: center;
   }
 }

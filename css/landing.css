@@ -242,7 +242,7 @@
 }
 .landing_features .landing_features_cloud {
   position: absolute;
-  top: -150px;
+  top: -114px;
   right: 0;
   z-index: 11;
   width: 100%;
@@ -278,15 +278,38 @@
   position: relative;
   margin-top: -1px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 .landing_roadmap .landing_rmLastChild::after {
   display: none !important;
 }
-.landing_roadmap .landing_roadmap_main #roadmap_tabContent1, .landing_roadmap .landing_roadmap_main #roadmap_tabContent2, .landing_roadmap .landing_roadmap_main #roadmap_tabContent3, .landing_roadmap .landing_roadmap_main #roadmap_tabContent4, .landing_roadmap .landing_roadmap_main #roadmap_tabContent5 {
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper2,
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper6,
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper3,
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper4,
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper5 {
   display: none;
+}
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper5 {
+  height: 1100px;
+}
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper4,
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper1 {
+  height: 1700px;
+}
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper3 {
+  height: 1514px;
+}
+.landing_roadmap .landing_roadmap_main #landing_rmWrapper2 {
+  height: 2200px;
 }
 .landing_roadmap .landing_roadmap_main .landing_tabsWrapper {
   overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.landing_roadmap .landing_roadmap_main .landing_tabsWrapper::-webkit-scrollbar {
+  display: none;
 }
 .landing_roadmap .landing_roadmap_main .landing_roadmap_tabs {
   display: flex;
@@ -329,6 +352,7 @@
 .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
   position: absolute;
   width: 100%;
+  top: 0;
 }
 .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent .stageReverse {
   margin-right: auto;
@@ -603,6 +627,11 @@
   background-position: center top;
 }
 
+@media screen and (max-width: 1490px) {
+  .landing_features .landing_features_cloud {
+    top: -100px;
+  }
+}
 @media screen and (max-width: 991px) {
   .landing_promo .landing_promo_main {
     width: 100%;
@@ -623,8 +652,7 @@
     flex-wrap: wrap;
   }
   .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
-    transform: scale(0.6);
-    width: 140%;
+    zoom: 0.7;
     bottom: 0;
   }
   .landing_tokenomics .landing_tokenomics_main {
@@ -659,18 +687,35 @@
 .landing_promo .landing_promo_back1 {
     bottom: -146px;
   }
-  #landing_rmWrapper6 {
-    height: 935px;
+  #landing_rmWrapper6,
+#landing_rmWrapper5 {
+    height: 800px !important;
   }
-}
-@media screen and (max-width: 768px) {
-  .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
-    transform: scale(0.5);
-    width: 185%;
+  #landing_rmWrapper4,
+#landing_rmWrapper1 {
+    height: 1200px !important;
+  }
+  #landing_rmWrapper2 {
+    height: 1550px !important;
   }
   .landing_roadmap {
     padding-top: 50px;
     overflow: hidden;
+  }
+  .landing_footer .landing_footer_sosials {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
+    zoom: 0.5;
+  }
+  #landing_rmWrapper6,
+#landing_rmWrapper5 {
+    height: 600px !important;
+  }
+  #landing_rmWrapper2 {
+    height: 1100px !important;
   }
   .landing_team .landing_team_main {
     flex-wrap: wrap;
@@ -684,6 +729,10 @@
   .landing_tokenomics .landing_tokenomics_table .landing_tokenomics_table_side {
     width: 100%;
   }
+  #landing_rmWrapper4,
+#landing_rmWrapper1 {
+    height: 830px !important;
+  }
 }
 @media screen and (max-width: 533px) {
   .landing_features .landing_features_cloud {
@@ -692,7 +741,8 @@
   .landing_promo .landing_promo_main .landing_promo_nav {
     flex-wrap: wrap;
   }
-  .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark1, .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark2 {
+  .landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark1,
+.landing_promo .landing_promo_main .landing_promo_nav .landing_btnDark2 {
     width: 100%;
     margin-top: 10px;
   }
@@ -721,5 +771,24 @@
   .landing_promo .landing_promo_main .landing_promo_list .landing_promo_list_item .fistSm {
     margin-right: 20px;
     margin-bottom: 0;
+  }
+  .landing_roadmap .landing_roadmap_main .landing_roadmap_tabContent {
+    zoom: 0.4;
+  }
+  #landing_rmWrapper6,
+#landing_rmWrapper5 {
+    height: 470px !important;
+  }
+  #landing_rmWrapper4,
+#landing_rmWrapper1 {
+    height: 700px !important;
+  }
+  #landing_rmWrapper2 {
+    height: 900px !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .landing_features .landing_features_main {
+    justify-content: center;
   }
 }/*# sourceMappingURL=landing.css.map */
